@@ -11,6 +11,6 @@ function foo() {
   console.log('foo');
 }
 
-someAsyncOperation();
-foo();
-console.log('done');
+someAsyncOperation(); //3 because the function is in the callback queue. when foo finish which means the poll operations finish, it will callback.
+foo(); //1
+console.log('done'); //2

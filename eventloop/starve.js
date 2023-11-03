@@ -6,6 +6,6 @@ const cb = () => {
 
 setTimeout(() => console.log('setTimeout executed'), 5);
 
-process.nextTick(cb);
+setImmediate(() => cb); // if it's process.nextTick() then after the poll - log(start), it just keep calling 
 
 console.log('Start');

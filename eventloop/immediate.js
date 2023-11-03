@@ -18,8 +18,11 @@ fs.readFile('./data/test.txt', function(err, data) {
 
   setImmediate(() => {
     console.log('I was scheduled to run immediately');
-  });
+  }); // part of callback
 
 
 });
 
+// setImmediate(() => {
+//   console.log('I was scheduled to run immediately');
+// }); right after poll, before callback

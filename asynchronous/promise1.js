@@ -26,3 +26,5 @@ function main() {
 
 main();
 console.log('processing ... ');
+
+// promise runs before event queue, also before nextTick
